@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>quiet cat website</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      background: black;
+    }
+
+    .bg {
+      position: fixed;
+      inset: 0;
+      background: url("sleepingcat.png") center/cover no-repeat;
+      filter: brightness(0.85);
+      transform: scale(1.03);
+    }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(10, 10, 12, 0.45);
+    }
+
+    .text {
+      position: absolute;
+      bottom: 40px;
+      width: 100%;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 18px;
+    }
+
+    .hint {
+      position: absolute;
+      top: 20px;
+      width: 100%;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg"></div>
+  <div class="overlay"></div>
+
+  <div class="hint">there is nothing to do here</div>
+  <div class="text">this website is useless it doesnt do anything</div>
+</body>
+</html>
